@@ -3,11 +3,11 @@ using System;
 
 namespace ByteBank
 {
-    class Program
+    class Program //Programa para exemplificar a utilização do construtor 
     {
         static void Main(string[] args)
         {
-            GerenciadorBonificacao gerenciador = new GerenciadorBonificacao();
+            GerenciadorBonificacao gerenciadorBn = new GerenciadorBonificacao();
 
             Funcionario Carlos = new Funcionario();
             Diretor Ana = new Diretor();
@@ -20,12 +20,12 @@ namespace ByteBank
             Ana.CPF = "339 189 988 83";
             Ana.Nome = "Ana Carolinha da Musica";
 
-            gerenciador.Registrar(Carlos);
-            gerenciador.Registrar(Ana);
+            gerenciadorBn.Registrar(Carlos);
+            gerenciadorBn.Registrar(Ana);
 
             Console.WriteLine("Bonus do Carlos = " + Carlos.GetBonificacao());
             Console.WriteLine("Bonus do Ana = " + Ana.GetBonificacao());
-            Console.WriteLine("Bonus total aplicado = " + gerenciador.GetTotalBonificacao());
+            Console.WriteLine("Bonus total aplicado = " + gerenciadorBn.GetTotalBonificacao());
 
 
 
