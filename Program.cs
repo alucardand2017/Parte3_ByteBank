@@ -12,7 +12,7 @@ namespace ByteBank
             Funcionario Carlos = new Funcionario();
             Diretor Ana = new Diretor();
 
-            Carlos.Salario = 2000;
+            Carlos.Salario = 10000;
             Carlos.CPF = "338 189 988 82";
             Carlos.Nome = "Carlos Alberto de Nóbrega";
 

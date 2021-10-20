@@ -16,7 +16,7 @@ namespace ByteBank.Funcionarios
         public string CPF { get; set; }
         public double Salario { get; set; }
     
-    public double GetBonificacao()
+    public virtual double GetBonificacao() // pode ser sobreescrito por um método override
         {
             return (Salario * 0.10);
         }

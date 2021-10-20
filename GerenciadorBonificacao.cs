@@ -15,10 +15,7 @@ namespace ByteBank
         {
             return _totalBonificacao  += funcionario.GetBonificacao();
         } //Exemplo de sobrecarga do metodo, mas é valido, já que os argumentos sao de tipos diferentes, o que é uma obrigatoriedade
-        public double Registrar(Diretor diretor)
-        {
-            return _totalBonificacao += diretor.GetBonificacao();
-        } //Exemplo de sobrecarga do metodo, mas é valido, já que os argumentos sao de tipos diferentes, o que é uma obrigatoriedade
+ 
         public double GetTotalBonificacao()
         {
             return _totalBonificacao;
